@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" align="center">
+        <h1>CONTACT FORM</h1>
+        <table align="center" cellpadding="10">
+            <tr>
+                <td><label for="fullname">Fullname:</label></td>
+                <td><input type="text" id="fullname" name="fullname" maxlength="50" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="pnumber">Phone Number:</label></td>
+                <td><input type="tel" id="pnumber" name="pnumber" pattern="[0-9]" maxlength="11" required></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Subject:</label></td>
+                <td>
+                    <select name="subject" id="subject">
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                        <option value="html">HTML</option>
+                        <option value=".net">.NET</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea name="message" id="message" minlength="10" maxlength="500"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
